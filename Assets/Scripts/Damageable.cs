@@ -104,6 +104,7 @@ public class Damageable : MonoBehaviour
             //Notify other subscribed components that the damageable was hit to handle the knockback
             animator.SetTrigger(AnimationStrings.hitTrigger);
             damageableHit?.Invoke(damage, knockback);
+            CharacterEvents.characterDamaged.Invoke(gameObject, damage);
 
             return true;
         }
