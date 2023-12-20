@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b60867b09813844c8e313bd474fb758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noCollidersRemain:
+    m_PersistentCalls:
+      m_Calls: []
   detectedColliders: []
 --- !u!61 &9204303807565349162
 BoxCollider2D:
@@ -293,9 +296,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7810f60f41034424c96495046b5ad09c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1
-  attackZone: {fileID: 3381369592445638577}
+  walkSpeed: 3
+  maxSpeed: 3
+  walkAcceleration: 50
   walkStopRate: 0.8
+  attackZone: {fileID: 3381369592445638577}
+  cliffDetectionZone: {fileID: 354319864676715193}
   _hasTarget: 0
 --- !u!114 &208785364236636472
 MonoBehaviour:
@@ -453,4 +459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b60867b09813844c8e313bd474fb758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noCollidersRemain:
+    m_PersistentCalls:
+      m_Calls: []
   detectedColliders: []
