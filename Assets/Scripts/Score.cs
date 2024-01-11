@@ -56,8 +56,4 @@ public class Score : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
 
-    private void ResetScore()
-    {
-        score = 0;
-    }
 }
